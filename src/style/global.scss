@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+@font-face {
+  font-family: "Noto Sans TC";
+  font-display: auto;
+  src: local("Noto Sans TC"), local("NotoSansTC-Regular"),
+    url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff2) format("woff2"),
+    url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.woff) format("woff"),
+    url(//fonts.gstatic.com/ea/notosanstc/v1/NotoSansTC-Regular.otf) format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #2c3e50;
+  font-family: "Noto Sans TC", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  text-align: center;
+}
+.page-title {
+  font-size: 28px;
+  font-weight: bold;
+  padding: 20px;
+}
